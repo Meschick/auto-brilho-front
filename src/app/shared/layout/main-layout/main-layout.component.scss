@@ -1,0 +1,16 @@
+
+
+
+.layout-container{ 
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100vh;
+  background: #FFFFFF;
+}
+
+.content{
+    flex: 1;
+    padding: 20px;
+    background-color: #F9FAFB ;
+    overflow-y: auto;
+}
