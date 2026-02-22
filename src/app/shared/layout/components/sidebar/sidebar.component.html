@@ -1,19 +1,15 @@
 <nav class="sidebar" [class.expanded]="isExpanded">
-
-  <!-- Toggle Button -->
+  
   <button class="toggle-btn" (click)="toggle()">
-    <i class="pi"
-       [ngClass]="isExpanded ? 'pi-angle-left' : 'pi-angle-right'">
+    <i class="pi" [ngClass]="isExpanded ? 'pi-angle-left' : 'pi-angle-right'">
     </i>
   </button>
 
-  <!-- Logo -->
   <div class="logo-container">
-    <img src="assets/logo3.png" alt="Logo">
-    <span class="brand-name">Auto Brilho</span>
+    <img src="assets/logo4.png" alt="Lava Jato Logo" />
+    <span class="label">AUTO BRILHO</span>
   </div>
 
-  <!-- Links -->
   <a routerLink="/dashboard" routerLinkActive="active">
     <i class="pi pi-home"></i>
     <span class="label">Dashboard</span>
@@ -28,5 +24,4 @@
     <i class="pi pi-briefcase"></i>
     <span class="label">Serviços</span>
   </a>
-
 </nav>
