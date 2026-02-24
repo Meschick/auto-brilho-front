@@ -5,10 +5,22 @@ export const routes: Routes = [
   {
     path: '',
     component: MainLayoutComponent,
-    children: [{
+    children: [
+      {
         path: 'dashboard',
         loadChildren: () => import('./feature/dashboard/dashboard.routes')
         .then(m => m.DASHBOARD_ROUTES)
-    }],
-  },
+      },
+      {
+        path: 'clientes',
+        loadChildren: () => import('./feature/clientes/clientes.routes')
+        .then(m => m.CLIENTES_ROUTES)
+      },
+      {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full',
+      },
+    ]
+  }
 ];
