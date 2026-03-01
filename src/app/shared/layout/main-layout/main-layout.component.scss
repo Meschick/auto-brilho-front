@@ -1,6 +1,4 @@
 
-
-
 .layout-container{ 
   display: grid;
   grid-template-columns: auto 1fr;
@@ -10,7 +8,7 @@
 
 .content{
     flex: 1;
-    padding: 20px;
+    padding: 15px;
     background-color: #F9FAFB ;
     overflow-y: auto;
 }
