@@ -3,6 +3,8 @@ import { RouterModule } from "@angular/router";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 
 export const ANGULAR_MATERIAL = [
   CommonModule,
@@ -10,5 +12,7 @@ export const ANGULAR_MATERIAL = [
   ReactiveFormsModule,
   RouterModule,
   MatButtonModule,
-  MatIconModule
+  MatIconModule,
+  MatTableModule,
+  MatPaginatorModule
 ]
