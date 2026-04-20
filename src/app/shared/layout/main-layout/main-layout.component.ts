@@ -10,10 +10,9 @@ import { HeaderComponent } from '../components/header/header.component';
   standalone: true,
   imports: [
     SidebarComponent,
-    HeaderComponent,
     CommonModule,
     RouterOutlet
-  ],
+],
   templateUrl: './main-layout.component.html',
   styleUrl: './main-layout.component.scss'
 })
